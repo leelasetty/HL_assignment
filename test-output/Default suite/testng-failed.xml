@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HL_testNG.TestNgAuth">
+      <class name="HL_testNG.TestNgAlert">
         <methods>
-          <include name="unameCorrect_passwdWrong"/>
-          <include name="invokeBrowser"/>
-          <include name="quitURL"/>
+          <include name="startAssert"/>
           <include name="closeURL"/>
+          <include name="quitURL"/>
+          <include name="promptCancel"/>
+          <include name="invokeBrowser"/>
+          <include name="promptOK"/>
           <include name="TestNames"/>
         </methods>
-      </class> <!-- HL_testNG.TestNgAuth -->
+      </class> <!-- HL_testNG.TestNgAlert -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
