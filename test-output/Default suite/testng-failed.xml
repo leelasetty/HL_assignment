@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="HL_testNG.TestNgAuth">
+        <methods>
+          <include name="unameCorrect_passwdWrong"/>
+          <include name="invokeBrowser"/>
+          <include name="quitURL"/>
+          <include name="closeURL"/>
+          <include name="TestNames"/>
+        </methods>
+      </class> <!-- HL_testNG.TestNgAuth -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
