@@ -32,15 +32,14 @@ public class HLauthentication {
 		driver.quit();
 	}
 	
-	public void verify(String eString, String aString) {			
+	public void verify(String eString, String aString) {
 		
-		if ((eString.equals(aString)))
-		{
-			//System.out.println("I am suppose to enter");
-			System.out.println("Login Success " +  aString);
+		if (eString.equals(aString))
+		{			
+			System.out.println("Login Success :" +  aString);
 		}
 		else {
-			System.out.println("Login fail    " +  aString);
+			System.out.println("Login fail    : " +  aString);
 		}
 	} // end of verify
 	
@@ -52,13 +51,16 @@ public class HLauthentication {
 		Thread.sleep(500);
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(passwd);
 		Thread.sleep(500);
-		//driver.wait(1000);
 		driver.findElement(By.xpath("//button[@class='radius']")).click();
 		WebElement link = driver.findElement(By.id("flash"));
 		String actualStr = link.getText();
-		verify(ExpectedStr,actualStr);
-		//System.out.println(" text is " + link.getText());
 		
+		//System.out.println("actual string : " + actualStr + "--" + actualStr.length());
+		
+		/* code to overcome space and * found at the end of actual_string*/
+		String modActualString = actualStr.substring(0,(actualStr.length()-2));
+		verify(ExpectedStr,modActualString);
+						
 	} //end_of_unameWr_passwdW
 	
 	//Main Starts Here 		
@@ -69,12 +71,12 @@ public class HLauthentication {
 		
 		HLauthentication obj = new  HLauthentication();
 		obj.invokeBrowser();
-		obj.unameWr_passwdWr("admin","admin",unameInval);
-		obj.unameWr_passwdWr("tomsmith","admin",passwordInval);
-		obj.unameWr_passwdWr("admin","SuperSecretPassword!",unameInval);
+		obj.unameWr_passwdWr("wrongadmin","wrongadmin",unameInval);
+		obj.unameWr_passwdWr("tomsmith","wrongadmin",passwordInval);
+		obj.unameWr_passwdWr("wrongadmin","SuperSecretPassword!",unameInval);
 		obj.unameWr_passwdWr("tomsmith","SuperSecretPassword!",loginSuccess);
-					
-		//obj.unameCor_passwdCor();
+		obj.quitURL();
+		
 	}
 
 }
