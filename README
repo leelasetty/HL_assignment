@@ -1,0 +1,18 @@
+My github repository : https://github.com/leelasetty/HL_assignment.git
+
+Three features automated are 
+1.	Form Authentication: 
+2.	Dynamic Loading
+3.	JavaScript Alerts
+
+Java scripts working code [.java and .class] files location  : HL_assignment/src/HL_package/*.java
+							       HL_assignment/bin/HL_package/*.class
+
+TestNG working code files directory : 	HL_assignment/src/HL_testNG
+
+WebDriver used is chromedriver : HL_assignment/src/myDrivers 
+
+configuration informations :
+IDE used Eclipse  : Version: 2021-03 (4.19.0)
+Java version used : 11.0.11
+TestNG plugin version : 6.14.2
