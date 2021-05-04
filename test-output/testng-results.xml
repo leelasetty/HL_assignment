@@ -1,85 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-04T18:56:26Z" name="Default suite" finished-at="2021-05-04T18:57:07Z" duration-ms="41043">
+  <suite started-at="2021-05-04T19:56:14Z" name="Default suite" finished-at="2021-05-04T19:56:26Z" duration-ms="11988">
     <groups>
     </groups>
-    <test started-at="2021-05-04T18:56:26Z" name="Default test" finished-at="2021-05-04T18:57:07Z" duration-ms="41043">
-      <class name="HL_testNG.TestNgAlert">
-        <test-method is-config="true" signature="TestNames()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:26Z" name="TestNames" finished-at="2021-05-04T18:56:26Z" duration-ms="15" status="PASS">
+    <test started-at="2021-05-04T19:56:14Z" name="Default test" finished-at="2021-05-04T19:56:26Z" duration-ms="11988">
+      <class name="HL_testNG.TestNgDynamicLoading">
+        <test-method is-config="true" signature="TestNames()[pri:0, instance:HL_testNG.TestNgDynamicLoading@305b7c14]" started-at="2021-05-04T19:56:14Z" name="TestNames" finished-at="2021-05-04T19:56:14Z" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestNames -->
-        <test-method is-config="true" signature="startAssert()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:26Z" name="startAssert" finished-at="2021-05-04T18:56:26Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="startAssert()[pri:0, instance:HL_testNG.TestNgDynamicLoading@305b7c14]" started-at="2021-05-04T19:56:14Z" name="startAssert" finished-at="2021-05-04T19:56:14Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startAssert -->
-        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:26Z" name="invokeBrowser" finished-at="2021-05-04T18:56:32Z" duration-ms="5463" status="PASS">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:HL_testNG.TestNgDynamicLoading@305b7c14]" started-at="2021-05-04T19:56:14Z" name="invokeBrowser" finished-at="2021-05-04T19:56:19Z" duration-ms="5554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method signature="alertConfirmCancel()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:32Z" name="alertConfirmCancel" finished-at="2021-05-04T18:56:32Z" duration-ms="182" status="PASS">
+        <test-method signature="waitForText()[pri:0, instance:HL_testNG.TestNgDynamicLoading@305b7c14]" started-at="2021-05-04T19:56:19Z" name="waitForText" finished-at="2021-05-04T19:56:25Z" duration-ms="5504" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- alertConfirmCancel -->
-        <test-method is-config="true" signature="closeURL()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:32Z" name="closeURL" finished-at="2021-05-04T18:56:32Z" duration-ms="217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeURL -->
-        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:32Z" name="invokeBrowser" finished-at="2021-05-04T18:56:37Z" duration-ms="4597" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method signature="alertConfirmOK()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:37Z" name="alertConfirmOK" finished-at="2021-05-04T18:56:37Z" duration-ms="166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- alertConfirmOK -->
-        <test-method is-config="true" signature="closeURL()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:37Z" name="closeURL" finished-at="2021-05-04T18:56:37Z" duration-ms="175" status="PASS">
+        </test-method> <!-- waitForText -->
+        <test-method is-config="true" signature="closeURL()[pri:0, instance:HL_testNG.TestNgDynamicLoading@305b7c14]" started-at="2021-05-04T19:56:25Z" name="closeURL" finished-at="2021-05-04T19:56:25Z" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeURL -->
-        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:37Z" name="invokeBrowser" finished-at="2021-05-04T18:56:43Z" duration-ms="5762" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method signature="alertOk()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:43Z" name="alertOk" finished-at="2021-05-04T18:56:43Z" duration-ms="174" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- alertOk -->
-        <test-method is-config="true" signature="closeURL()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:43Z" name="closeURL" finished-at="2021-05-04T18:56:43Z" duration-ms="222" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeURL -->
-        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:43Z" name="invokeBrowser" finished-at="2021-05-04T18:56:53Z" duration-ms="10070" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method signature="promptCancel()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:53Z" name="promptCancel" finished-at="2021-05-04T18:56:54Z" duration-ms="177" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- promptCancel -->
-        <test-method is-config="true" signature="closeURL()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:54Z" name="closeURL" finished-at="2021-05-04T18:56:54Z" duration-ms="216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeURL -->
-        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:56:54Z" name="invokeBrowser" finished-at="2021-05-04T18:57:06Z" duration-ms="12522" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method signature="promptOK()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:57:06Z" name="promptOK" finished-at="2021-05-04T18:57:07Z" duration-ms="199" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- promptOK -->
-        <test-method is-config="true" signature="closeURL()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:57:07Z" name="closeURL" finished-at="2021-05-04T18:57:07Z" duration-ms="229" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeURL -->
-        <test-method is-config="true" signature="quitURL()[pri:0, instance:HL_testNG.TestNgAlert@609cd4d8]" started-at="2021-05-04T18:57:07Z" name="quitURL" finished-at="2021-05-04T18:57:07Z" duration-ms="635" status="PASS">
+        <test-method is-config="true" signature="quitURL()[pri:0, instance:HL_testNG.TestNgDynamicLoading@305b7c14]" started-at="2021-05-04T19:56:25Z" name="quitURL" finished-at="2021-05-04T19:56:26Z" duration-ms="705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitURL -->
-      </class> <!-- HL_testNG.TestNgAlert -->
+      </class> <!-- HL_testNG.TestNgDynamicLoading -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

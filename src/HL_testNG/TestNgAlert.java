@@ -52,83 +52,83 @@ public class TestNgAlert {
 		
 	} // end of invokeBrowse
 
-@AfterMethod
-public void closeURL() {		
-		System.out.println(" --- @aftermethod");
-		driver.close();
-	}
-	
-@Test
-public void alertOk() {
-		String expectedStr = "You successfully clicked an alert";			
-		driver.findElement(By.xpath("//button[text()='Click for JS Alert']")).click();
-		Alert aObj = driver.switchTo().alert();
-		aObj.accept();
-		String resultStr = driver.findElement(By.id("result")).getText();
+	@AfterMethod
+	public void closeURL() {		
+			System.out.println(" --- @aftermethod");
+			driver.close();
+		}
 		
-		userSoftAssert.assertEquals(expectedStr,resultStr);
-		userSoftAssert.assertAll();
-	}
-	
-@Test	
-public void alertConfirmOK() {
-		
-		String expectedStr = "You clicked: Ok";
-		driver.findElement(By.xpath("//button[text()='Click for JS Confirm']")).click();
-		Alert aObj = driver.switchTo().alert();
-		aObj.accept();			
-		String resultStr = driver.findElement(By.id("result")).getText();
-		userSoftAssert.assertEquals(expectedStr,resultStr);
-		userSoftAssert.assertAll();
-		
-	}  // end_of_alertConfirmok
-
-@Test	
-public void alertConfirmCancel() {
-		
-		String expectedStr = "You clicked: Cancel";
-		driver.findElement(By.xpath("//button[text()='Click for JS Confirm']")).click();
-		Alert aObj = driver.switchTo().alert();
-		aObj.dismiss();
-		String resultStr = driver.findElement(By.id("result")).getText();
-		userSoftAssert.assertEquals(expectedStr,resultStr);
-		userSoftAssert.assertAll();
-	}  // end_of_alertConfirmCancel
-
-@Test
-public void promptOK() {
-	
-	String resultStr;
-	driver.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
-	Alert aObj = driver.switchTo().alert();
-	aObj.sendKeys("OK");
-	aObj.accept();
-	resultStr = driver.findElement(By.id("result")).getText();
-	//System.out.println("When i am OK           : " + resultStr);
-	userSoftAssert.assertEquals("You entered: OK",resultStr);
-	userSoftAssert.assertAll();
-
-}			
+	@Test
+	public void alertOk() {
+			String expectedStr = "You successfully clicked an alert";			
+			driver.findElement(By.xpath("//button[text()='Click for JS Alert']")).click();
+			Alert aObj = driver.switchTo().alert();
+			aObj.accept();
+			String resultStr = driver.findElement(By.id("result")).getText();
 			
-@Test
-public void promptCancel() {
-	
-	String resultStr;
-	driver.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
-	Alert aObj = driver.switchTo().alert();
-	aObj.sendKeys("OK");
-	aObj.dismiss();	
-	resultStr = driver.findElement(By.id("result")).getText();
-	userSoftAssert.assertEquals("You entered: null",resultStr);	
-	userSoftAssert.assertAll();
+			userSoftAssert.assertEquals(expectedStr,resultStr);
+			userSoftAssert.assertAll();
+		}
+		
+	@Test	
+	public void alertConfirmOK() {
 			
-}
+			String expectedStr = "You clicked: Ok";
+			driver.findElement(By.xpath("//button[text()='Click for JS Confirm']")).click();
+			Alert aObj = driver.switchTo().alert();
+			aObj.accept();			
+			String resultStr = driver.findElement(By.id("result")).getText();
+			userSoftAssert.assertEquals(expectedStr,resultStr);
+			userSoftAssert.assertAll();
+			
+		}  // end_of_alertConfirmok
+	
+	@Test	
+	public void alertConfirmCancel() {
+			
+			String expectedStr = "You clicked: Cancel";
+			driver.findElement(By.xpath("//button[text()='Click for JS Confirm']")).click();
+			Alert aObj = driver.switchTo().alert();
+			aObj.dismiss();
+			String resultStr = driver.findElement(By.id("result")).getText();
+			userSoftAssert.assertEquals(expectedStr,resultStr);
+			userSoftAssert.assertAll();
+		}  // end_of_alertConfirmCancel
+	
+		@Test
+		public void promptOK() {
+			
+			String resultStr;
+			driver.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
+			Alert aObj = driver.switchTo().alert();
+			aObj.sendKeys("OK");
+			aObj.accept();
+			resultStr = driver.findElement(By.id("result")).getText();
+			//System.out.println("When i am OK           : " + resultStr);
+			userSoftAssert.assertEquals("You entered: OK",resultStr);
+			userSoftAssert.assertAll();
+		
+		}			
+				
+	@Test
+	public void promptCancel() {
+		
+		String resultStr;
+		driver.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
+		Alert aObj = driver.switchTo().alert();
+		aObj.sendKeys("OK");
+		aObj.dismiss();	
+		resultStr = driver.findElement(By.id("result")).getText();
+		userSoftAssert.assertEquals("You entered: null",resultStr);	
+		userSoftAssert.assertAll();
+				
+	}
 
-@AfterTest
-public void quitURL() {
-	System.out.println(" --- @AfterTest ");
-	driver.quit();
-}
+	@AfterTest
+	public void quitURL() {
+		System.out.println(" --- @AfterTest ");
+		driver.quit();
+	}
 
 
 
